@@ -46,4 +46,15 @@ public class UserRegistration {
 
     }
 
+
+    public boolean checkMobileNumber(String mobileNumber) {
+
+        pattern =  Pattern.compile("^[0-9]{2}\\s{1}[0-9]{10}$");
+        matcher = pattern.matcher(mobileNumber);
+        if(matcher.matches()){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
