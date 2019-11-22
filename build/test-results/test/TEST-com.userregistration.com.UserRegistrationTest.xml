@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.userregistration.com.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-22T12:59:54" hostname="admin1-LIVA-Z2V" time="0.002">
-  <properties/>
-  <testcase name="givenFirstName_WhenCorrect_ReturnTrue" classname="com.userregistration.com.UserRegistrationTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
