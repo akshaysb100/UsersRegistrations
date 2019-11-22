@@ -64,4 +64,60 @@ public class UserRegistrationTest {
         Assert.assertFalse(firstName);
     }
 
+    @Test
+    public void givenLastName_WhenCorrect_ReturnTrue() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("Bavalekar");
+        Assert.assertTrue(lastName);
+    }
+
+    @Test
+    public void givenLastName_WhenMinimumThreeCharacter_ReturnTrue() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("Bavalekar");
+        Assert.assertTrue(lastName);
+    }
+
+    @Test
+    public void givenLastName_WhenLowerCase_ReturnFalse() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("bavalekar");
+        Assert.assertFalse(lastName);
+    }
+
+    @Test
+    public void givenLastName_WhenAllCaps_ReturnFalse() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("BAVALEKAR");
+        Assert.assertFalse(lastName);
+
+    }
+
+    @Test
+    public void givenLastName_WhenContainNumber_ReturnFalse() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("Bavalekar123");
+        Assert.assertFalse(lastName);
+    }
+
+    @Test
+    public void givenLastName_WhenSpecialCharacter_ReturnFalse() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("AK@SHAY");
+        Assert.assertFalse(lastName);
+    }
+
+    @Test
+    public void givenLastName_WhenMinimumTreeCharacter_ReturnFalse() {
+
+        UserRegistration userRegistration = new UserRegistration();
+        boolean lastName = userRegistration.checkLastName("Ak");
+        Assert.assertFalse(lastName);
+    }
 }

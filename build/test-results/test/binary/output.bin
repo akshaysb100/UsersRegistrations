@@ -1,0 +1,18 @@
+&Hex Color Code abc@yahoo.com is valid
+*Hex Color Code abc.100@yahoo.com is valid
++Hex Color Code abc.100@abc.com.au is valid
+*Hex Color Code abc+100@gmail.com is valid
+,Hex Color Code abc.abc@gmail.co.in is valid
+)Hex Color Code abc100@gmail.com is valid
+Hex Color Code abc is invalid
+	&Hex Color Code abc@.com.my is invalid
+
+)Hex Color Code abc123@gmail.a is invalid
+'Hex Color Code .abc@abc.com is invalid
++Hex Color Code abc()*@gmail.com is invalid
+$Hex Color Code abc@%.com is invalid
+.Hex Color Code abc..2002@gmail.com is invalid
+%Hex Color Code abc.@g.com is invalid
+,Hex Color Code abc@abc@gmail.com is invalid
+(Hex Color Code abc@a.com.21a is invalid
+*Hex Color Code abc@g.cim.au.au is invalid
