@@ -149,7 +149,14 @@ public class UserRegistrationTest {
     @Test
     public void givenMobileNumber_WhenPassedOtherThanNumeric_ReturnFalse()
     {
-        boolean number = userRegistration.checkMobileNumber("987ASD54@210");
+        boolean number = userRegistration.checkMobileNumber("987dasff3213");
         Assert.assertFalse(number);
+    }
+
+    @Test
+    public void givenPassword_WhenPassword()
+    {
+        boolean password = userRegistration.checkPassword("AaAaad122ss@aa");
+        Assert.assertTrue(password);
     }
 }
